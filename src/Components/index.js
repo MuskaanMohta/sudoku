@@ -1,5 +1,5 @@
-import Game from "./Game/game";
-import Home from "./Home/home";
+import Game from "./Game/Game";
+import Home from "./Home/Home";
 
 
 export {Game,Home};

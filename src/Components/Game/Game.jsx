@@ -27,7 +27,6 @@ const Game = () => {
         <button onClick={()=>quitGame()} className='p-3 rounded-md bg-slate-900 hover:bg-slate-800 active:scale-90'><LogOut /></button>
         <button onClick={()=>pauseGame()} className='p-3 rounded-md bg-slate-900 hover:bg-slate-800 active:scale-90'>{!isPause?<Pause />:<Play/>}</button>
         <button onClick={()=>resetQBoard()} className='p-3 rounded-md bg-slate-900 hover:bg-slate-800 active:scale-90'>Reset</button>
-        <button onClick={()=>togglePencilMode()} className={`p-3 rounded-md bg-slate-900 hover:bg-slate-800 active:scale-90 ${pencilMode&&"text-green-500"}`}><PencilLine /></button>
         <button onClick={()=>usedHint()} className='relative p-3 rounded-md bg-slate-900 hover:bg-slate-800 active:scale-90'>
           <span className='absolute flex items-center justify-center w-6 h-6 p-2 text-xl text-center text-white bg-blue-700 rounded-full -right-3 -top-3'>{hints}</span>
           <Lightbulb /></button>
